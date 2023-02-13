@@ -5,7 +5,7 @@ public class Student {
     public Student() {
     }
 
-    public Student(String name, int age) throws WrongAgeException {
+    public Student(String name, int age) {
         this.name = name;
         if (age<0) {
             this.age = age;
@@ -26,7 +26,7 @@ public class Student {
         return age;
     }
 
-    public void setAge(int age) throws WrongAgeException {
+    public void setAge(int age){
         if (age > 0 ){
             this.age = age;
         }

@@ -1,10 +1,10 @@
 import java.io.IOException;
 
-public class WrongAgeException extends IOException {
+public class WrongAgeException extends ArithmeticException {
     public WrongAgeException() {
     }
 
-    public WrongAgeException(String message) {
-        super(message);
+    public WrongAgeException(String s) {
+        super(s);
     }
 }
