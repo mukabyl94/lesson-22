@@ -8,9 +8,9 @@ public class Student {
     public Student(String name, int age) {
         this.name = name;
         if (age<0) {
-            this.age = age;
-        }else {
             throw new WrongAgeException("jash tura emes");
+        }else {
+            this.age = age;
         }
     }
 
@@ -27,11 +27,11 @@ public class Student {
     }
 
     public void setAge(int age){
-        if (age > 0 ){
-            this.age = age;
+        if (age < 0 ){
+            throw new WrongAgeException("jash tura emes");
         }
         else{
-            throw new WrongAgeException("jash tura emes");
+           this.age = age;
         }
 
     }

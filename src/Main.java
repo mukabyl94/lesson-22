@@ -58,7 +58,7 @@ public class Main {
             arrayList.add(student5);
             arrayList.add(null);
 
-            System.out.println(student);
+            System.out.println(arrayList);
         }catch (IndexOutOfBoundsException o){
             System.out.println(o.getMessage());
         }
