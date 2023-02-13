@@ -59,14 +59,18 @@ public class Main {
             arrayList.add(student5);
             arrayList.add(null);
 
+//            arrayList.add(new Student("Jack", 24));
+//            arrayList.add(new Student("Niko", 34));
+//            arrayList.add(new Student("Misha", 25));
+//            arrayList.add(new Student("Nike", -24));
+//            arrayList.add(new Student("Karl", 18));
+
             System.out.println(arrayList);
+            System.out.println(arrayList.get(8));
         }catch (WrongAgeException o){
             System.out.println(o.getMessage());
-        }
-        finally {
+        } finally {
             System.out.println("buttu");
         }
-
-
     }
 }
