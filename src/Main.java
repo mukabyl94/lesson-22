@@ -43,7 +43,7 @@ public class Main {
 //        ArrayList<String> arrayList1 = new ArrayList<>();
 //        arrayList1.add("Hello");
 
-
+        ArrayList<Student> arrayList = new ArrayList<>();
         try{
             Student student = new Student("Jack", 24);
             Student student2 = new Student("Niko", 34);
@@ -51,7 +51,6 @@ public class Main {
             Student student4 = new Student("Nike", -24);
             Student student5 = new Student("Karl", 18);
 
-            ArrayList<Student> arrayList = new ArrayList<>();
             arrayList.add(student);
             arrayList.add(student2);
             arrayList.add(student3);
@@ -67,9 +66,10 @@ public class Main {
 
             System.out.println(arrayList);
             System.out.println(arrayList.get(8));
-        }catch (WrongAgeException o){
+        }catch (WrongAgeException | IndexOutOfBoundsException o){
             System.out.println(o.getMessage());
-        } finally {
+        }
+            finally {
             System.out.println("buttu");
         }
     }
